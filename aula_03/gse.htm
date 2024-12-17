@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aproveite ofertas incríveis na GSE Soluções. Ferramentas, reformas e mais! Frete grátis e descontos imperdíveis.">
+  <meta name="keywords" content="ferramentas, reformas, black friday, GSE Soluções, desconto, frete grátis">
+  <meta name="author" content="GSE Soluções">
+  <title>GSE Soluções</title>
+  <link rel="stylesheet" href="gse.css">
+  <style>
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .topo {
+            text-align: center;
+            color: #f1c607;
+            background-color: #333;
+            padding: 20px;
+        }
+        .offer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .offer {
+            width: 300px;
+            border: 2px solid #030101;
+            border-radius: 15px;
+            background-color: #fff;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+        }
+        .offer img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .offer .details {
+            padding: 15px;
+            color: #333;
+        }
+        .offer .title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+        .offer .price {
+            font-size: 1.1em;
+            color: #d9534f;
+            margin: 5px 0;
+        }
+        .offer .discount {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #f1c607;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        .offer .description {
+            font-size: 0.95em;
+            margin: 10px 0;
+        }
+        .offer .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #f1c607;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .offer .button:hover {
+            background-color: #e0b806;
+        }
+        .offer .rating {
+            font-size: 0.9em;
+            color: #ffaa00;
+            margin-top: 5px;
+        }
+    </style>
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="promo-bar">
+      <span>Cupon até 15%: use PRORROGADA</span>
+      <span>Frete Grátis</span>
+      <span>OFERTAS FIM DE ANO</span>
+      <span>Desconto no PIX</span>
+      <span>Cartão GSE Soluções</span>
+    </div>
+    <div class="main-header">
+      <div class="logo">
+        <span>GSE Soluções</span>
+      </div>
+      <div class="options">
+        <button>Informe seu CEP</button>
+        <label for="search-input" class="visually-hidden">Buscar no site</label>
+        <input id="search-input" type="text" placeholder="O que você tá procurando?" />
+        <button>Buscar</button>
+      </div>
+      <div class="links">
+        <a href="">Login</a>
+        <a href="#"></a>
+        <a href="#">🛒</a>
+      </div>
+    </div>
+    <nav class="categories">
+      <a href="nossa.html">Nossa Loja</a>
+      <a href="#">Reforma</a>
+      <a href="#">Ferramentas</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="carousel">
+      <div class="slide active">
+        <a href="black-friday.html">Black Friday Prorrogada - Até 50% OFF</a>
+      </div>
+      <div class="slide">
+        <a href="frete-gratis.html">Frete Grátis para Todo Brasil</a>
+      </div>
+      <div class="slide">
+        <a href="promocoes.html">Promoções Imperdíveis</a>
+      </div>
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+      <div class="indicators">
+        <span class="indicator active"></span>
+        <span class="indicator"></span>
+        <span class="indicator"></span>
+      </div>
+    </section>
+    <div class="offer-container">
+      <div class="offer">
+          <div class="discount">10% OFF</div>
+          <img src="img/WhatsApp Image 2024-10-28 at 11.00.56 (1).jpeg" alt="Produto em Oferta 1">
+          <div class="details">
+              <p class="title">Produto em Oferta 1</p>
+              <p class="price">Todas as promoções com 10% de desconto</p>
+              <p class="description">Ofertas válidas somente enquanto durarem os estoques.</p>
+              <p class="rating">⭐⭐⭐⭐⭐ (4.8/5)</p>
+              <a href="#" class="button">Saiba Mais</a>
+          </div>
+      </div>
+
+      <div class="offer">
+          <div class="discount">15% OFF</div>
+          <img src="img/WhatsApp Image 2024-10-28 at 11.00.56.jpeg" alt="Produto em Oferta 2">
+          <div class="details">
+              <p class="title">Produto em Oferta 2</p>
+              <p class="price">Todas as promoções com 15% de desconto</p>
+              <p class="description">Ofertas válidas somente enquanto durarem os estoques.</p>
+              <p class="rating">⭐⭐⭐⭐⭐ (4.7/5)</p>
+              <a href="#" class="button">Saiba Mais</a>
+          </div>
+      </div>
+
+      <div class="offer"> <!-- Corrigido de "ofertas" para "offer" -->
+          <div class="discount">20% OFF</div>
+          <img src="img/WhatsApp Image 2024-10-28 at 11.00.58.jpeg" alt="Produto em Oferta 3">
+          <div class="details">
+              <p class="title">Produto em Oferta 3</p>
+              <p class="price">Todas as promoções com 20% de desconto</p>
+              <p class="description">Ofertas válidas somente enquanto durarem os estoques.</p>
+              <p class="rating">⭐⭐⭐⭐⭐ (4.7/5)</p>
+              <a href="#" class="button">Saiba Mais</a>
+          </div>
+      </div>
+  </div>
+  <div class="section stores">
+    <h2><i class="fas fa-store icon"></i> Visite Nossas Lojas</h2>
+    <div class="store">
+        <p>Loja 1</p>
+        <img src="img/WhatsApp Image 2024-11-04 at 10.22.50.jpeg" alt="Imagem da Loja 1 da GSE Soluções">
+        <p><strong>Endereço:</strong> Rua das Flores, 123 - Centro, Cidade XYZ</p>
+        <p><strong>Telefone:</strong> (11) 1234-5678</p>
+    </div>
+    <div class="store">
+        <p>Loja 2</p>
+        <img src="img/WhatsApp Image 2024-11-04 at 10.35.28.jpeg" alt="Imagem da Loja 2 da GSE Soluções">
+        <p><strong>Endereço:</strong> Avenida das Árvores, 456 - Bairro ABC, Cidade XYZ</p>
+        <p><strong>Telefone:</strong> (11) 9876-5432</p>
+    </div>
+</div>
+
+
+
+ 
+  <script src="gse.js"></script>
+</body>
+</html>

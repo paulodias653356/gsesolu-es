@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSE Reforma</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        /* Estilo do topo */
+        .topo {
+            background-color: #2196f3;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .topo h1 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        .topo nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        .topo nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+
+        .topo nav a:hover {
+            color: #ffeb3b;
+        }
+
+        .topo .button-contact {
+            padding: 10px 20px;
+            background-color: #ffeb3b;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .topo .button-contact:hover {
+            background-color: #fdd835;
+            color: #000;
+        }
+
+        .topo .search-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .topo .search-bar input[type="text"] {
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: none;
+            font-size: 1em;
+            width: 200px;
+            transition: width 0.3s;
+        }
+
+        .topo .search-bar input[type="text"]:focus {
+            width: 300px;
+            outline: none;
+        }
+
+        .topo .search-bar button {
+            background-color: #ffeb3b;
+            border: none;
+            border-radius: 20px;
+            padding: 8px 15px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .topo .search-bar button:hover {
+            background-color: #fdd835;
+        }
+
+        /* Ajuste para conteúdo após o topo */
+        .content {
+            padding-top: 100px;
+        }
+
+        /* Estilo da seção de catálogo */
+        .reforma {
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #2196f3, #1e88e5);
+            color: #fff;
+            text-align: center;
+        }
+
+        .reforma-header h2 {
+            font-size: 2.8em;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .reforma-header p {
+            font-size: 1.2em;
+            color: #dfe6fd;
+            margin: 10px 0 30px;
+        }
+
+        .reforma-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .reforma-item {
+            width: 300px;
+            border: none;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            text-align: left;
+        }
+
+        .reforma-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .reforma-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .details {
+            padding: 15px;
+        }
+
+        .details h3 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .details p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        .details .price {
+            font-size: 1.2em;
+            color: #e53935;
+            margin: 15px 0;
+        }
+
+        .details .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2196f3;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .details .button:hover {
+            background-color: #1e88e5;
+        }
+    </style>
+</head>
+<body>
+    <!-- Topo -->
+    <div class="topo">
+        <h1>GSE Reforma</h1>
+        <nav>
+            <a href="#produtos">Produtos</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar...">
+            <button>Buscar</button>
+        </div>
+        <a href="#contato" class="button-contact">Fale Conosco</a>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="content">
+        <section class="reforma" id="produtos">
+            <div class="reforma-header">
+                <h2>Tudo Para sua Reforma</h2>
+                <p>Qualidade e economia para transformar seu ambiente. Encontre os melhores produtos com preços especiais!</p>
+            </div>
+            <div class="reforma-container">
+                <!-- Produto 1 -->
+                <div class="reforma-item">
+                    <img src="img/piso laminado.png" alt="Piso Vinílico Autocolante em Régua">
+                    <div class="details">
+                        <h3>Piso Vinílico Autocolante em Régua</h3>
+                        <p>Durável, prático e com design moderno. Ideal para qualquer ambiente.</p>
+                        <p class="price">R$ 28,99/m²</p>
+                        <a href="#" class="button">adicionar ao carrinho</a>
+                    </div>
+                </div>
+                <!-- Produto 2 -->
+                <div class="reforma-item">
+                    <img src="img/tinta coralar.png" alt="Tinta Premium">
+                    <div class="details">
+                        <h3>Coral Acrílica tinta antimofo 18l cor areia</h3>
+                        <p>Variedade de cores e acabamentos. Garantia de cobertura perfeita.</p>
+                        <p class="price"> R$ 260,00</p>
+                        <a href="#" class="button">adicionar ao carrinho</a>
+                    </div>
+                </div>
+                <!-- Produto 3 -->
+                <div class="reforma-item">
+                    <img src="img/ferramentas-reforma.jpg" alt="Kit de Ferramentas">
+                    <div class="details">
+                        <h3>Kit de Ferramentas</h3>
+                        <p>Conjunto completo para suas reformas. Resistência e praticidade.</p>
+                        <p class="price">R$ 199,90</p>
+                        <a href="#" class="button">Ver Mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
